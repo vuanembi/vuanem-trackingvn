@@ -3,7 +3,7 @@ cachetools==5.2.0; python_version >= "3.7" and python_version < "4.0" and (pytho
 certifi==2022.6.15; python_version >= "3.6" and python_full_version < "3.0.0" and python_version < "3.11" or python_version >= "3.6" and python_version < "3.11" and python_full_version >= "3.5.0"
 chardet==4.0.0; python_version >= "3.6" and python_full_version < "3.0.0" and python_version < "3.11" or python_version >= "3.6" and python_version < "3.11" and python_full_version >= "3.5.0"
 charset-normalizer==2.1.0; python_full_version >= "3.6.0" and python_version >= "3.6"
-compose==1.4.7
+compose==1.4.8
 google-api-core==2.8.2; python_version >= "3.6" and python_version < "3.11"
 google-auth==2.8.0; python_version >= "3.6" and python_full_version < "3.0.0" and python_version < "3.11" or python_version >= "3.6" and python_version < "3.11" and python_full_version >= "3.6.0"
 google-cloud-bigquery==2.34.4; python_version >= "3.6" and python_version < "3.11"

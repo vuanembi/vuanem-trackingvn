@@ -115,7 +115,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
 name = "compose"
-version = "1.4.7"
+version = "1.4.8"
 description = "The classic ``compose``, with all the Pythonic features."
 category = "main"
 optional = false
@@ -653,10 +653,10 @@ colorama = [
     {file = "colorama-0.4.5.tar.gz", hash = "sha256:e6c6b4334fc50988a639d9b98aa429a0b57da6e17b9a44f0451f930b6967b7a4"},
 ]
 compose = [
-    {file = "compose-1.4.7-py2.py30-none-any.whl", hash = "sha256:173bc3dc266ae901308ac3e6874ae3241d566b6dc0849b6bcc16922ef51a9d67"},
-    {file = "compose-1.4.7-py35-none-any.whl", hash = "sha256:92b10dbbce78ef3c25e8fa5eb60114698d9981492b8ab560186a6b9113ebaf2f"},
-    {file = "compose-1.4.7-py38-none-any.whl", hash = "sha256:6f5ad5508855b7c04d79d67652fa5b2ca116121825727074c9e3f181904b95ba"},
-    {file = "compose-1.4.7.tar.gz", hash = "sha256:e492b2ff6cff199f8571ddaa9e4e3ae9a7ee5554ae66434e8beaf8260f818f82"},
+    {file = "compose-1.4.8-py2.py30-none-any.whl", hash = "sha256:e536952d63f94772e2a5b5faab02cd4f90a512091d7c14654776ca93f724afa5"},
+    {file = "compose-1.4.8-py35-none-any.whl", hash = "sha256:0ce2277ee564125a005857e48f5b36f6532d3d7183383c3663d4ae7bfdff204e"},
+    {file = "compose-1.4.8-py38-none-any.whl", hash = "sha256:c0c6fe70bad11c5f0085f757df921bc649f15678b806de4ba3af90c854053724"},
+    {file = "compose-1.4.8.tar.gz", hash = "sha256:9a945a6df0b82c4eb16251e641b1dbd725f12c3b47e6277037819b52708f193a"},
 ]
 google-api-core = [
     {file = "google-api-core-2.8.2.tar.gz", hash = "sha256:06f7244c640322b508b125903bb5701bebabce8832f85aba9335ec00b3d02edc"},
