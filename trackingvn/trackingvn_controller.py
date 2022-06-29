@@ -1,6 +1,6 @@
 from typing import Any
 
-from trackingvn_service import pipeline_service
+from trackingvn.trackingvn_service import pipeline_service
 
 
 def controller(body: dict[str, Any]):

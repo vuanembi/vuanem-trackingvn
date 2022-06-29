@@ -14,7 +14,7 @@ def get_auth_session() -> httpx.Client:
     res = httpx.post(
         f"{BASE_URL}/users/login",
         headers={
-            "UserName": os.getenv("USERNAME", ""),
+            "UserName": "vuanem",
             "PassWord": os.getenv("PASSWORD", ""),
             "DeviceID": DEVICE_ID,
         },

@@ -31,10 +31,10 @@ jobs:
           echo "PUBLIC_URL=https://us-central1-voltaic-country-280607.cloudfunctions.net/vuanem-trackingvn" >> $GITHUB_ENV
 
       - id: set-fn-name
-        run: echo "::set-output name=fn-name::${{ env.FUNCTION_NAME}}"
+        name: Set Output
+        run: echo "::set-output name=fn-name::${{ env.FUNCTION_NAME }}"
 
       - run: |
-          echo "USERNAME: ${{ secrets.USERNAME }}" >> ${{ env.ENV_FILE }}
           echo "PASSWORD: ${{ secrets.PASSWORD }}" >> ${{ env.ENV_FILE }}
 
       - uses: actions/upload-artifact@v2
