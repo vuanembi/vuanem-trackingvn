@@ -3,12 +3,25 @@ from datetime import datetime, timedelta
 import re
 
 from compose import compose
-from trackingvn import trackingvn_repository, trackingvn_entity
+from trackingvn import trackingvn_repository
 import pytz
 
 from db.bigquery import load
 
 TZ = pytz.timezone("Asia/Ho_Chi_Minh")
+
+schema = [
+    {"name": "tn", "type": "STRING"},
+    {"name": "t", "type": "TIMESTAMP"},
+    {"name": "k", "type": "NUMERIC"},
+    {"name": "r", "type": "NUMERIC"},
+    {"name": "rs", "type": "TIMESTAMP"},
+    {"name": "re", "type": "TIMESTAMP"},
+    {"name": "sc", "type": "INTEGER"},
+    {"name": "kme", "type": "NUMERIC"},
+    {"name": "dre", "type": "NUMERIC"},
+    {"name": "_batched_at", "type": "TIMESTAMP"},
+]
 
 
 def parse_timestamp(value: str) -> Optional[str]:
@@ -57,7 +70,7 @@ def pipeline_service(start: Optional[str], end: Optional[str]) -> int:
             lambda x: {
                 "output_rows": x,
             },
-            load("p_ReportSummary", 't', trackingvn_entity.schema),
+            load("p_ReportSummary", 't', schema),
             transform,
             trackingvn_repository.get_report_summary(client, _start, _end),
             trackingvn_repository.get_vehicles(client),
